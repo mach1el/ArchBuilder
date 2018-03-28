@@ -1,0 +1,2 @@
+# yaourt.sh
+Install yaourt 
