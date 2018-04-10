@@ -1,0 +1,2 @@
+#!/bin/bash
+yaourt -S la-capitaine-icon-theme osx-arc-darker osx-arc-plus osx-arc-shadow osx-arc-white --noconfirm 
