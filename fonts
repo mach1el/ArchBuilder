@@ -1,3 +1,9 @@
 #!/bin/bash
 
 yaourt -S ttf-mac-fonts otf-san-francisco otf-hermit --noconfirm
+
+cd /usr/share/icons
+sudo -s
+git clone https://github.com/t7hm1/Fonts.git
+fc-cache -fv
+cd ~
