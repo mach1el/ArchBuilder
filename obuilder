@@ -5,7 +5,6 @@ sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-q
 yaourt -S polybar cava arc-icon-theme-git backlight-git brightnessctl dunst-git moka-icon-theme-git openbox-arc-git obmenu-generator otf-font-awesome-4 otf-hermit otf-san-francisco otf-font-awesome-4 terminess-powerline-font-git terminus-font-ttf ttf-font-awesome-4 ttf-mac-fonts --noconfirm
 
 cd ~ 
-mkdir buildob && cd buildob
 git https://github.com/t7hm1/ob-configuration.git
 cd ob-configuration
 cp -r .config ~
