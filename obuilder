@@ -1,11 +1,5 @@
 #!/bin/bash
 
-sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-qt obmenu oblogout openbox openbox-themes rofi wireless_tools mpd powerline powerline2-common powerline-fonts python-powerline network-manager-applet xscreensaver --noconfirm
+sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-qt obmenu oblogout openbox openbox-themes rofi wireless_tools mpd powerline powerline-fonts python-powerline network-manager-applet xscreensaver --noconfirm
 
-yaourt -S polybar cava arc-icon-theme-git backlight-git brightnessctl dunst-git moka-icon-theme-git openbox-arc-git obmenu-generator otf-font-awesome-4 otf-hermit otf-san-francisco otf-font-awesome-4 terminess-powerline-font-git terminus-font-ttf ttf-font-awesome-4 ttf-mac-fonts --noconfirm
-
-cd ~ 
-git https://github.com/t7hm1/ob-configuration.git
-cd ob-configuration
-cp -r .config ~
-
+yaourt -S polybar cava arc-icon-theme-git backlight-git brightnessctl dunst-git moka-icon-theme-git openbox-arc-git obmenu-generator --noconfirm
