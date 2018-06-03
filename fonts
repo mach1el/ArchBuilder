@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yaourt -S ttf-mac-fonts otf-san-francisco otf-hermit otf-font-awesome-4 otf-font-awesome-4 terminess-powerline-font-git terminus-font-ttf ttf-font-awesome-4 --noconfirm
+yaourt -S ttf-mac-fonts otf-san-francisco otf-hermit otf-font-awesome-4 otf-font-awesome-4 terminess-powerline-font-git terminus-font-ttf ttf-font-awesome-4 noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra otf-fira-sans otf-fira-mono otf-font-awesome powerline-fonts powerline powerline-fonts python-powerline --noconfirm
 
 cd /usr/share/fonts
 sudo git clone https://github.com/t7hm1/Fonts.git
