@@ -1,9 +1,8 @@
 #!/bin/bash
 
-yaourt -S ttf-mac-fonts otf-san-francisco otf-hermit --noconfirm
+yaourt -S ttf-mac-fonts otf-san-francisco otf-hermit otf-font-awesome-4 otf-font-awesome-4 terminess-powerline-font-git terminus-font-ttf ttf-font-awesome-4 --noconfirm
 
-cd /usr/share/icons
-sudo -s
-git clone https://github.com/t7hm1/Fonts.git
-fc-cache -fv
+cd /usr/share/fonts
+sudo git clone https://github.com/t7hm1/Fonts.git
+sudo fc-cache -fv
 cd ~
