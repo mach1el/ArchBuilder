@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-qt obmenu oblogout openbox openbox-themes rofi wireless_tools mpd network-manager-applet xscreensaver --noconfirm
+sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-qt oblogout openbox rofi wireless_tools mpd network-manager-applet xscreensaver --noconfirm
 
-yaourt -S polybar cava arc-icon-theme-git backlight-git brightnessctl dunst-git moka-icon-theme-git openbox-arc-git obmenu-generator --noconfirm
+yaourt -S polybar cava arc-icon-theme-git brightnessctl openbox-arc-git obmenu-generator --noconfirm
