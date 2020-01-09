@@ -2,4 +2,4 @@
 
 sudo pacman -S plank compton dunst lxappearance-obconf menumaker obconf obconf-qt oblogout openbox rofi wireless_tools mpd network-manager-applet xscreensaver --noconfirm
 
-yaourt -S polybar cava arc-icon-theme-git brightnessctl openbox-arc-git obmenu-generator --noconfirm
+yay -S polybar cava arc-icon-theme-git brightnessctl openbox-arc-git obmenu-generator --noconfirm
