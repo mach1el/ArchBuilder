@@ -1,4 +1,2 @@
 #!/bin/bash
-yay -S la-capitaine-icon-theme osx-el-capitan-theme-git mojave-gtk-theme\ 
-    capitaine-cursors osx-arc-darker osx-arc-plus osx-arc-shadow osx-arc-white\ 
-    mojave-ct-icon-theme --noconfirm 
+yay -S la-capitaine-icon-theme osx-el-capitan-theme-git mojave-gtk-theme capitaine-cursors osx-arc-darker osx-arc-plus osx-arc-shadow osx-arc-white mojave-ct-icon-theme --noconfirm 
