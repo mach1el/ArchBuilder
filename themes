@@ -1,2 +1,7 @@
 #!/bin/bash
-yay -S la-capitaine-icon-theme osx-el-capitan-theme-git mojave-gtk-theme capitaine-cursors osx-arc-darker osx-arc-plus osx-arc-shadow osx-arc-white mojave-ct-icon-theme --noconfirm 
+yay -S la-capitaine-icon-theme osx-el-capitan-theme-git capitaine-cursors --noconfirm
+
+sudo pacman -S gtk-engine-murrine gtk-engines --noconfirm
+
+cd /tmp && git clone https://github.com/vinceliuice/Mojave-gtk-theme.git && cd Mojave-gtk-theme && sudo ./install.sh -a && cd ..
+git clone https://github.com/vinceliuice/McMojave-circle.git && cd McMojave-circle && sudo ./install.sh -a && cd ~
