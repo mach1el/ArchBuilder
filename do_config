@@ -1,0 +1,6 @@
+#!/bin/bash
+
+wget https://gist.githubusercontent.com/t7hm1/e65e04e5d277649cb6a94cc755097b34/raw/4a9946a3661c8fcf0add2baa6d51c1a4540bb4f5/powertop.service -O /etc/systemd/system/powertop.service
+wget https://gist.githubusercontent.com/t7hm1/90a8b92ecfcb3161a00b739ad0ec11be/raw/9af33715e1ee1103b806dec8bd94da0ceea008af/70-synaptics.conf -O /etc/X11/xorg.conf.d/70-synaptics.conf
+wget https://gist.githubusercontent.com/t7hm1/8b01e0bdb2d9b834228bd63ed6128197/raw/984cb3872d0b9ef41a36c67aa7f18c81e09b4668/pci_pm.rules -O /etc/udev/rules.d/pci_pm.rules
+wget https://gist.githubusercontent.com/t7hm1/28d8c0d036aa2edbaafdbb75b839059a/raw/abbc657e803dfa299df4cc78d26fdb03163709db/10-udisks2.rules -O /etc/polkit-1/rules.d/10-udisks2.rules
