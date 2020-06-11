@@ -5,8 +5,8 @@ yay -S libdbusmenu-glib \
 	libdbusmenu-gtk2 \
 	appmenu-gtk-module-git \
 	vala-panel-appmenu-xfce-git \
-	vala-panel-appmenu-registrar-git
-	--noconfirm
+	vala-panel-appmenu-registrar-git \
+    --noconfirm
 
 xfconf-query -c xsettings -p /Gtk/ShellShowsMenubar -n -t bool -s true
 xfconf-query -c xsettings -p /Gtk/ShellShowsAppmenu -n -t bool -s true
