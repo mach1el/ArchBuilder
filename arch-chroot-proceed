@@ -34,9 +34,9 @@ GRUB_DISABLE_LINUX_UUID=true
 GRUB_DISABLE_RECOVERY=true
 EOT
 
-echo "LANG=en_US.UTF-8" > /etc/locale.conf &
-ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime &
-hwclock --systz --localtime &
-mkinitcpio -P &
-grub-install &
+echo "LANG=en_US.UTF-8" > /etc/locale.conf;
+ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime;
+hwclock --systz --localtime;
+mkinitcpio -P;
+grub-install;
 grub-mkconfig -o /boot/grub/grub.cfg
