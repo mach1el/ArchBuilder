@@ -1,6 +1,13 @@
 #!/bin/bash
 
 pacman -Sy reflector --noconfirm &
+
+reflector -l 2 -c sg --save /etc/pacman.d/mirrorlist &
+
+mount /dev/nvme0n1p3 /mnt &
+mkdir /mnt/boot && mkdir /mnt/boot/efi &
+mount /dev/nvme0n1p1 /mnt/boot/efi &
+
 pacstrap -i /mnt \
   base \
   base-devel \
@@ -11,10 +18,10 @@ pacstrap -i /mnt \
   efibootmgr \
   linux-headers \
   linux-lts \
-  linux-lts-headers 
+  linux-lts-headers \
   linux-zen \
   linux-zen-headers \
   linux-firmware \
   --noconfirm &
   
-genfstab -Up /mnt >> /mnt/etc/fstab
+exec genfstab -Up /mnt >> /mnt/etc/fstab
