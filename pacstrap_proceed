@@ -22,6 +22,8 @@ pacstrap -i /mnt \
   linux-zen \
   linux-zen-headers \
   linux-firmware \
+  python \
+  openssh \
   --noconfirm;
   
 exec genfstab -Up /mnt >> /mnt/etc/fstab
