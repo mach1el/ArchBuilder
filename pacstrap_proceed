@@ -1,7 +1,7 @@
 #!/bin/bash
 
-exec pacman -Sy reflector --noconfirm
-exec pacstrap -i /mnt \
+pacman -Sy reflector --noconfirm &
+pacstrap -i /mnt \
   base \
   base-devel \
   vim \
@@ -15,6 +15,6 @@ exec pacstrap -i /mnt \
   linux-zen \
   linux-zen-headers \
   linux-firmware \
-  --noconfirm
+  --noconfirm &
   
-exec genfstab -Up /mnt >> /mnt/etc/fstab
+genfstab -Up /mnt >> /mnt/etc/fstab
