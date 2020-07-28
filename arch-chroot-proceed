@@ -23,7 +23,7 @@ EOT
 cat <<EOT > /etc/default/grub
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash root=/dev/nvme0n1p3 resume=/dev/nvme0n1p2"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash root=/dev/nvme0n1p7 resume=/dev/nvme0n1p5"
 GRUB_CMDLINE_LINUX=""
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 GRUB_TIMEOUT_STYLE=menu
