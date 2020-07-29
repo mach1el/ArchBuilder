@@ -4,9 +4,9 @@ pacman -Sy reflector --noconfirm;
 
 reflector -l 2 -c sg --save /etc/pacman.d/mirrorlist;
 
-mount /dev/nvme0n1p7 /mnt;
-mkdir /mnt/boot && mkdir /mnt/boot/efi;
-mount /dev/nvme0n1p5 /mnt/boot/efi;
+mount /dev/nvme0n1p5 /mnt;
+mkdir /mnt/boot;
+mount /dev/nvme0n1p3 /mnt/boot;
 
 pacstrap -i /mnt \
   base \
@@ -24,6 +24,7 @@ pacstrap -i /mnt \
   linux-firmware \
   python \
   openssh \
+  ansible \
   --noconfirm;
   
 exec genfstab -Up /mnt >> /mnt/etc/fstab

@@ -23,7 +23,7 @@ EOT
 cat <<EOT > /etc/default/grub
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash root=/dev/nvme0n1p7 resume=/dev/nvme0n1p5"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash root=/dev/nvme0n1p5 resume=/dev/nvme0n1p4"
 GRUB_CMDLINE_LINUX=""
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 GRUB_TIMEOUT_STYLE=menu
@@ -41,6 +41,6 @@ ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime;
 hwclock --systz --localtime;
 useradd -mg users -G wheel,power,storage -s /bin/bash michael;
 mkinitcpio -P;
-grub-install;
+grub-install --target=x86_64-efi --efi-directory=/boot/ --bootloader-id=GRUB;
 grub-mkconfig -o /boot/grub/grub.cfg;
 systemctl enable NetworkManager
