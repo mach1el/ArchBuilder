@@ -11,6 +11,9 @@ mount /dev/nvme0n1p3 /mnt/boot;
 pacstrap -i /mnt \
   base \
   base-devel \
+  git \
+  curl \
+  wget \
   vim \
   nano \
   networkmanager \
